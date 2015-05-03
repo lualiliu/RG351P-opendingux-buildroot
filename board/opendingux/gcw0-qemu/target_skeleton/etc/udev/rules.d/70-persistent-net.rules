@@ -1,0 +1,2 @@
+# PCI device, don't let udev rename it to enp0s18
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNEL=="eth*", NAME="eth0"
